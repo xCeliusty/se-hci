@@ -9,7 +9,7 @@
 		<!-- Link to the google font  -->
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
 		<!-- Link to the CSS file  -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="layouts/css/style.css">
 		<title>login</title>
 	</head>
 
