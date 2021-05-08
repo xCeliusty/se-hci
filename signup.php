@@ -13,7 +13,7 @@
 	</head>
 
 	<body>
-		
+	<?php include("includes/header.php");?>
 			<div class="form">
 			<h1>Sign up</h1>
 			<h2>please fill in this form</h2>
