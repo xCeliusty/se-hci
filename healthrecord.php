@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+
+    <?php
+     include("includes/head.php");
+     if(!Login::isLoggedIn()) {
+        die("Not Logged In");
+      }
+     ?>
+     <!DOCTYPE html>
 	<html lang="en">
 
 	<head>
@@ -8,11 +15,10 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
 		<!-- Link to the CSS file  -->
 		<link rel="stylesheet" href="layouts/css/style.css">
-		<title>Healthrecord </title>
+		<title>Dental clinic house goals</title>
 	</head>
-
-	<body>
-    <?php include("includes/header.php");?>
+    <body>
+        <?php include("includes/header.php"); ?>
 			<div class="form">
             <h1>Add a new patient</h1>
 				<form method="POST" action="healthrecord.php">

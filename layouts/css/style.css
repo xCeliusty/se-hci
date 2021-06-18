@@ -2,7 +2,8 @@ body {
     margin: 0;
     background-color: #1E4E5F;
     font-family: 'Montserrat', sans-serif;
-
+    box-sizing: border-box;
+    
 }
 p{
     color:white;
@@ -76,20 +77,19 @@ table td {
     width: 100%;
 }
 .header {
-    background-color: #0c252e;
+    background-color: #acd1fd;
     width: 100%;
     text-align: center;        
     height: 100px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 50px;
 }
 
 a {
     text-decoration: none;
     height: 100%;
-    color:white;  
-}
-
-a hover{
-    color:gray;
+    color:#21222d;  
 }
 
 .menu {
@@ -106,10 +106,13 @@ a hover{
     cursor: pointer;
     margin: 0 30px;
     margin-top: 40px;
+    color: #21222d;
+    font-weight: 800;
+    
 }
 
 .menu .header-item:hover {
-    color: grey;
+    color: #1b1b1b;
     /* background-color: white; */
 }
 
@@ -127,18 +130,15 @@ a hover{
 }
 
 .header .user-infoo .user-img {
-    width: 50px;
+    width: 70px;
     height: 50px;
-    border-radius: 50%;
-    border: 1px solid white;
     margin-right: 10px;
 }
 
 
 .header .user-infoo .user-img img {
-    width: 50px;
+    width: 70px;
     height: 50px;
-    border-radius: 50%;
 }
 
 .flex {
@@ -165,3 +165,16 @@ a hover{
     display: table;
   }
   
+  #loginBody , #signupBody {
+      background-image: url(../imgs/seamless.jpg);
+      background-size: contain;
+      background-color: rgba(255, 255, 255, 0.288);
+  }
+
+  .group-input.flex {
+      align-items: center;
+  }
+
+  .ta-c {
+      text-align: center;
+  }
