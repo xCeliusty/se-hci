@@ -1,8 +1,9 @@
 body {
-    margin: 0;
-    background-color: #1E4E5F;
+    background-image: url(../imgs/seamless.jpg);
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.288);
     font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
+
     
 }
 p{
@@ -165,10 +166,13 @@ a {
     display: table;
   }
   
-  #loginBody , #signupBody {
+  #loginBody , #signupBody,#healthrecordbody,#dentalclinic{
       background-image: url(../imgs/seamless.jpg);
       background-size: contain;
       background-color: rgba(255, 255, 255, 0.288);
+      margin:0;
+      font-family: 'Montserrat', sans-serif;
+
   }
 
   .group-input.flex {
@@ -177,4 +181,14 @@ a {
 
   .ta-c {
       text-align: center;
+  }
+
+  .group-input input[type=radio] {
+      width: 40% !important;
+      font-size: 18px;
+      height: 25px;
+  }
+
+  .flex {
+      display: flex;
   }

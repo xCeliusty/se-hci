@@ -26,6 +26,10 @@
 				exit;
 			}
 		}
+		else
+		{
+			print '<script>alert("Password doesn\'t match");</script>';
+		}
 	}
 ?>
      <!DOCTYPE html>
@@ -128,7 +132,7 @@
 						</div>
 					
 					<div class="group-btn">
-						<input type="submit" class="bButton" name="create" value="Signin"> 
+						<input type="submit" class="bButton" name="create" value="Login"> 
 					</div>
 						<a href="" class="ta-c"><h3>Forgot Your Password?<h3></a>
 				</form>
