@@ -24,11 +24,11 @@
    </style>
         <div class="view-container" style="text-align:center;margin-top: 100px;">
         <div class="row" style="width: 100%;margin:0 auto;text-align:center;">
-          <div class="column">
+          <a href="healthrecord.php"><div class="column">
             <img src="layouts/imgs/ehr.svg" alt="Create Electronic Health Records"width="150px" >
             <h3 style="padding-bottom: 10%;">Create Electronic Health Records</h3>
           
-          </div>
+          </div></a>
           <div class="column">
             <img src="layouts/imgs/calendar.svg" alt="calendar" width="150px ">
             <h3 style="padding-bottom: 10%;">Schedule Appointments </h3>

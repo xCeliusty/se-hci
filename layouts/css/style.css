@@ -186,8 +186,41 @@ a {
       width: 40% !important;
       font-size: 18px;
       height: 25px;
+      margin: 5px 0;
   }
 
   .flex {
       display: flex;
+  }
+
+  .fl-1 {
+      flex: 1;
+  }
+
+  .fl-2 {
+      flex: 2;
+  }
+
+  .mb-10 {
+      margin-bottom: 10px;
+  }
+
+  .mb-30 {
+      margin-bottom: 30px;
+  }
+
+    .mt-10 {
+        margin-top: 10px;
+    }
+
+    .mt-30 {
+        margin-top: 30px;
+    }
+
+  .mr-10 {
+      margin-right: 10px;
+  }
+
+  .mr-30 {
+      margin-block-end: 30px;
   }
