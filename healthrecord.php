@@ -17,7 +17,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
 		<!-- Link to the CSS file  -->
 		<link rel="stylesheet" href="layouts/css/style.css">
-		<title>Dental clinic house goals</title>
+		<title>Health record</title>
 	</head>
 
 	<body id="signupBody">

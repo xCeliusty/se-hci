@@ -1,7 +1,6 @@
 body {
-    background-image: url(../imgs/seamless.jpg);
-    background-size: contain;
-    background-color: rgba(255, 255, 255, 0.288);
+    margin: 0;
+    background-color: #010405;
     font-family: 'Montserrat', sans-serif;
 
     

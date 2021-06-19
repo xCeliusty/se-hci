@@ -5,7 +5,12 @@
 
 
 .header {
+<<<<<<< Updated upstream
 
+=======
+  
+  background-color: #f8f8fa;
+>>>>>>> Stashed changes
   padding: 10px 550px;
 }
 
@@ -45,16 +50,6 @@
   }
   
 }
-
-
-
-		
-	
-		
-		
-	
-
-		
 	
 		.container .contactInfo .box .text h3
 		{
@@ -63,8 +58,8 @@
 			
 			font-size:16px;
 			font-weight: 700;
-			color: #fffff;
-			width: 80%;
+			color: white;
+			width : 80%;
 			
 		}
 		.contactForm
@@ -103,14 +98,14 @@
 			margin: 10px 0;
 			pointer-events:none;
 			transition: 0.5s;
-			color:#1E4E5F;
+			color:white;
 		}
 		.contactForm .inputBox input:focus ~ span,
 		.contactForm .inputBox input:valid ~ span,
 		.contactForm .inputBox textarea:focus ~ span,
 		.contactForm .inputBox textarea:valid ~ span
 		{
-			color: #e91e63;
+			color: white;
 			font-size:12px;
 			transform: translateY(-20px);
 		}
@@ -118,7 +113,7 @@
 		{
 			width:200px;
 			margin-left:100;
-			background: #1E4E5F;
+			background: white;
 			color:#fff;
 			border:none;
 			cursor: pointer;
