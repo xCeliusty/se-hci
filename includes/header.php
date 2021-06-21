@@ -16,7 +16,7 @@
 
         <div class="menu fl-2 flex">
          <a href="home.php"> <p class="fl-1 header-item"> Home </p>
-           <a href="ont.php"> <p class="fl-1 header-item">Contact</p></a>
+           <a href="form.php"> <p class="fl-1 header-item">Contact us</p></a>
           <a href=""> <p class="fl-1 header-item">About</p></a> 
           <a href="logim.php">  <p class="fl-1 header-item">Login</p></a>
         
