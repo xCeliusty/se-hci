@@ -16,7 +16,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
 		<!-- Link to the CSS file  -->
 		<link rel="stylesheet" href="layouts/css/style.css">
-		<title>Health record</title>
+		<title>Add patient</title>
 	</head>
 
 	<body id="signupBody">
@@ -102,24 +102,38 @@
 		margin: 0 auto;
 	}
 	</style>
-<?php include("includes/header.php"); ?>
+<?php include("includes/header.php");
+if (isset($_POST['create'])) 
+{
+	//  $fname = $POST['fname'];
+	//  $lname = $POSTS['lname'];
+	//  $phonenumber = $POSTS['phonenumber'];
+	//  $dateofbirth = $POSTS['dateofbirth'];
+	//  $adress = $POSTS['adress'];
+	//  $gender = $POSTS['gender'];
+	//  $reason = $POSTS['reason'];
+	//  $healthcare = $POSTS['healthcare'];
+	add_new_patient::createpatient($_POST);
+
+}
+?>
 			<div class="form">
 			<h1>Add patient </h1>
-				<form method="POST" action="signup.php">
+				<form method="POST" action="healthrecord.php">
 					<div class="flex">
 						<div class="group-input fl-1 mr-10"><p>First Name</p>
-							<input type="text" name="firstname" placeholder="Enter your first name"> 
+							<input type="text" name="fname" placeholder="Enter your first name"> 
 						</div>
 						<div class="group-input fl-1"><p>Last Name</p>
-							<input type="text" name="lastname" placeholder="Enter your last name"> 
+							<input type="text" name="lname" placeholder="Enter your last name"> 
 						</div>
 					</div>
 					<div class="flex">
 						<div class="group-input fl-1 mr-10"><p>Phone number</p>
-							<input type="text" name="Phone Number" placeholder="Enter your Phone Number"> 
+							<input type="text" name="PhoneNumber" placeholder="Enter your Phone Number"> 
 						</div>
 						<div class="group-input fl-1"><p>Date of birth</p>
-							<input type="text" name="Date of birth" placeholder="Enter your date of birth"> 
+							<input type="text" name="Dateofbirth" placeholder="Enter your date of birth"> 
 						</div>
 					</div>
 					<div class="flex">
@@ -127,12 +141,12 @@
 							<input type="text" name="Address" placeholder="Enter your address"> 
 						</div>
 						<div class="group-input fl-1"><p>Reason of visit</p>
-							<input type="text" name="Reason of visit" placeholder="Enter your reason of visit"> 
+							<input type="text" name="Reasonofvisit" placeholder="Enter your reason of visit"> 
 						</div>
 					</div>
 					<div class="flex">
 						<div class="group-input fl-1"><p>Health care</p>
-							<input type="text" name="health care" placeholder="Enter your health"> 
+							<input type="text" name="healthcare" placeholder="Enter your health"> 
 						</div>
 						<div class="fl-1">
 						<p>Gender</p>

@@ -22,13 +22,17 @@
 				setcookie("USR", $token, time() + 60 * 60 * 24 * 7, '/', NULL, NULL, TRUE);
 				setcookie("USR_", '1', time() + 60 * 60 * 24 * 3, '/', NULL, NULL, TRUE);
 
-				header('Location: healthrecord.php');
+				header('Location: dentalclinichousegoals.php');
 				exit;
+			}
+			else
+			{
+				print '<script>alert("Password doesn\'t match");</script>';
 			}
 		}
 		else
 		{
-			print '<script>alert("Password doesn\'t match");</script>';
+			print '<script>alert("Email not found");</script>';
 		}
 	}
 ?>

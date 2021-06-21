@@ -1,4 +1,6 @@
 <?php
+include('DB.php');
+
 class User {
 
     private $firstName;
@@ -7,13 +9,13 @@ class User {
     private $phone;
     private $password;
 
-    public __construct() {
+    // public __construct() {
 
-    }
+    // }
 
-    public static createUser($POSTS) {
-        $fname = $POSTS['fname'];
-        $lname = $POSTS['lname'];
+    public static function createUser($POSTS) {
+        $fname = $POSTS['firstname'];
+        $lname = $POSTS['lastname'];
         $email = $POSTS['email'];
         $password = $POSTS['password'];
         $repassword = $POSTS['repassword'];
@@ -28,22 +30,22 @@ class User {
         
     }
 
-    public static viewSpecficUser($id) {
+    public static function viewSpecficUser($id) {
         $user = DB::query("SELECT * FROM users WHERE id=:id",array(':id'=>$id))[0];
         return $user;
     }
 
-    public static viewUsers($id) {
+    public static function viewUsers($id) {
         $allUsers = DB::query("SELECT * FROM users");
         return $allUsers;
     }
 
-    public static deleteUser($id) {
-        DB::query("DELETE FROM users WHERE id=:id",array(':id'=>$id));
+    // public static function deleteUser($id) {
+    //     DB::query("DELETE FROM users WHERE id=:id",array(':id'=>$id));
 
-    }
+    // }
 
-    public static updateUser($POSTS) {
+    public static function updateUser($POSTS) {
         $fname = $POSTS['fname'];
         $lname = $POSTS['lname'];
         $email = $POSTS['email'];

@@ -165,7 +165,7 @@ a {
     display: table;
   }
   
-  #loginBody , #signupBody,#healthrecordbody,#dentalclinic{
+  #loginBody , #signupBody,#healthrecordbody,#dentalclinic,#patientmedicalhistory{
       background-image: url(../imgs/seamless.jpg);
       background-size: contain;
       background-color: rgba(255, 255, 255, 0.288);
