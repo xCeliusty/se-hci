@@ -13,28 +13,6 @@ if (isset($_POST['create']))
   $password= $_POST['password'];
   $repassword= $_POST['repassword'];
 
-//   DB::query('INSERT INTO users VALUES(NULL,:fname,:lname,:email,:password)',array(':fname'=>$fname,':lname'=>$lname,':email'=>$email,':password'=>password_hash($password, PASSWORD_BCRYPT)));
-
-//   if (!empty($fullname) && !htmlspecialchars($fullname))
-//   {
-//     if(!empty($email))
-//     {
-//       if(!empty($password))
-//       {
-//         if(!empty($phone))
-//         {
-//           if(!empty($_POST["repassword"]))
-//           {
-//             if($password == $repassword)
-//             {
-              
-//               if(filter_var($email,FILTER_VALIDATE_EMAIL))
-//               {
-// 			  }
-// 			  }
-// 			  }
-// 			  }
-
 
 User::createUser($_POST);
 }

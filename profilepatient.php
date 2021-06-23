@@ -23,7 +23,7 @@
 
     <div class="navitems">
        
-      <a href=".php"><p class="nbitems"> View treatment plan&nbsp;&nbsp; <img class="icons" src="add.png"></p></a>
+      <a href="pmd.php"><p class="nbitems"> Treatment history form&nbsp;&nbsp; <img class="icons" src="add.png"></p></a>
       <a href=".php"><p class="nbitems">Add Appointment &nbsp;&nbsp;<img class="icons" src="add.png"></p></a>
       
       <a href="EditProfile.php"><p class="nbitems">Settings&nbsp;&nbsp;<img class="icons" src="settings.png"></p></a>
