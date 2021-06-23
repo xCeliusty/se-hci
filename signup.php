@@ -1,5 +1,6 @@
 <?php
-include("includes/head.php");
+// include("classes/DB.php");
+include("classes/User.php");
 
 
 if (isset($_POST['create'])) 
@@ -11,28 +12,6 @@ if (isset($_POST['create']))
   $email= $_POST['email'];
   $password= $_POST['password'];
   $repassword= $_POST['repassword'];
-
-//   DB::query('INSERT INTO users VALUES(NULL,:fname,:lname,:email,:password)',array(':fname'=>$fname,':lname'=>$lname,':email'=>$email,':password'=>password_hash($password, PASSWORD_BCRYPT)));
-
-//   if (!empty($fullname) && !htmlspecialchars($fullname))
-//   {
-//     if(!empty($email))
-//     {
-//       if(!empty($password))
-//       {
-//         if(!empty($phone))
-//         {
-//           if(!empty($_POST["repassword"]))
-//           {
-//             if($password == $repassword)
-//             {
-              
-//               if(filter_var($email,FILTER_VALIDATE_EMAIL))
-//               {
-// 			  }
-// 			  }
-// 			  }
-// 			  }
 
 
 User::createUser($_POST);
@@ -145,15 +124,15 @@ form {
 					</div>
 					<div class="group-input">
 					<select name="type" id="">
-							<option value="1">User</option>
-							<option value="2">Admin</option>
+							<option value="1">Admin</option>
+							<option value="2">Dentist</option>
+							<option value="3">Patient</option>
+						
 						</select>
 					</div>
-					
 					<div class="group-input flex" style="align-items: center;">
 							<input type="checkbox" class="checkInput"> <p style="width:100%">I accept the Term of use & Privacy Policy</p> 
 						</div>
-
 						
 						
 					<div class="group-btn">

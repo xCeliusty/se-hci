@@ -9,15 +9,10 @@ if(isset($_POST['success'])){
 <html>
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="css/s1.css">
+<link rel="stylesheet" type="text/css"  href="layouts/css/style.css">
 
 <style>
-body {
-  background-image: url('seamless.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
+
 h1{
 	text-algin:center;
 	margin-left:600px;
@@ -44,7 +39,8 @@ h6{
 
 </style>
 </head>
-<body>
+
+<body id="pmd">
 <div class="header">
  
   <div class="header-right">
@@ -73,7 +69,7 @@ h6{
 <span>Add a new item</span>
 </div>
 <div class="checkbox">
-<h4>Are you married?</h4>
+<h4>Are you a smoker?</h4>
 <input type="radio"required="required" name = "radio" value = "Yes">
 <span>Yes</span>
 <input type="radio"required="required" name = "radio" value = "No">

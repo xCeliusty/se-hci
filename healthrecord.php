@@ -1,6 +1,10 @@
 
     <?php
-     include("includes/head.php");
+    //  include("includes/head.php");
+	// include("classes/DB.php");
+	
+	include("classes/Addnewpatient.php");
+	include("classes/Login.php");
      if(!Login::isLoggedIn()) {
         die("Not Logged In");
       }
@@ -136,7 +140,7 @@ if (isset($_POST['create']))
 							<input type="text" name="PhoneNumber" placeholder="Enter your Phone Number"> 
 						</div>
 						<div class="group-input fl-1"><p>Date of birth</p>
-							<input type="text" name="Dateofbirth" placeholder="Enter your date of birth"> 
+							<input type="date" name="Dateofbirth" placeholder="Enter your date of birth"> 
 						</div>
 					</div>
 					<div class="flex">

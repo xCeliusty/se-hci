@@ -1,12 +1,15 @@
 <?php
-  include("classes/User.php");
 
-  $allUsers = User::viewUsers();
+// include("DB.php");
+
+  include("classes/Addnewpatient.php");
+
+  $allpatient =add_new_patient::viewpatient();
 
   if(isset($_GET['delete'])) {
     $user_id = $_GET['delete'];
 
-    User::deleteUser($user_id);
+    add_new_patient::deletepatient($user_id);
   }
 
 
@@ -27,10 +30,10 @@
 <link rel="stylesheet" href="assets/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="layouts/css/style.css">
-<title> admin</title>
+<title> Patients</title>
 </head>
 
-<body id="admin">
+<body id="patient">
   <style>
     
 .topber__profile {
@@ -115,7 +118,7 @@
 
 
 <!--------------------------------- Main section -------------------------------->
-<section class="main" style="color:black"><h1> All Admins </h1>
+<section class="main" style="color:black"><h1> All Patients </h1>
   <div class="container" style="top:550px">
   <div class="tablev" style="top:350px">
       
@@ -125,20 +128,32 @@
           <th >#</th>
           <th >First Name</th>
           <th >Last Name</th>
-          <th >Email</th>
+          <th >Phone number</th>
+          <th >Date of birth</th>
+          <th >Address</th>
+          <th >Gender</th>
+          <th >Reason</th>
+          <th >Past doc name</th>
+          <th >Health care</th>
           <th >Action</th>
         </tr>
       </thead>
       <tbody style="text-align:center">
           <?php
-              foreach($allUsers as $user) {
+              foreach($allpatient as $patients) {
           ?>
             <tr>
-                <td><?php echo $user['id'] ?></td>
-                <td><?php echo $user['fname'] ?></td>
-                <td><?php echo $user['lname'] ?></td>
-                <td><?php echo $user['email'] ?></td>
-                <td><a href="Admin1.php?delete=<?php echo $user['id']; ?>"><button style="color:black">Delete</button></a></td>
+                <td><?php echo $patients['id'] ?></td>
+                <td><?php echo $patients['fname'] ?></td>
+                <td><?php echo $patients['lname'] ?></td>
+                <td><?php echo $patients['phonenumber'] ?></td>
+                <td><?php echo $patients['dateofbirth'] ?></td>
+                <td><?php echo $patients['adress'] ?></td>
+                <td><?php echo $patients['gender'] ?></td>
+                <td><?php echo $patients['reason'] ?></td>
+                <td><?php echo $patients['pastdocname'] ?></td>
+                <td><?php echo $patients['healthcare'] ?></td>
+                <td><a href="allpatients.php?delete=<?php echo $patients['id']; ?>"><button style="color:black">Delete</button></a></td>
             </tr>
           <?php } ?>
 
@@ -171,6 +186,6 @@ function myFunction() {
 
 </body>
 </html>
-<?php
+
 
 ?>
