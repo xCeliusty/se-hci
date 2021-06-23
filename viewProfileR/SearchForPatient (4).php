@@ -5,8 +5,8 @@
   <html>
   <title>Search For patient</title>
    <head>
-   <link rel="stylesheet" href="cssR/SearchForPatientStyleAll.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--link rel="stylesheet" href="cssR/SearchForPatientStyleAll.css">
+<meta name="viewport" content="width=device-width, initial-scale=1"-->
     </head>
     
     <body>
@@ -25,7 +25,7 @@
   <input type='hidden' name='Pname' value='<php echo $row['patient_first_name'] ?>'/-->
    <?php
      echo $output2= "
-   <table ><tr> <th>patient ID</th><th>Phone Number</th> <th>Patient First Name</th> <th>Patient Last Name</th></tr><tr> <td>".$row['id']."</td><td>".$row['phonenumber']."</td><td>"
+   <table ><tr> <th>patient ID</th><th>Phone Number</th>  <th>Patient First Name</th> <th>Patient Last Name</th></tr><tr> <td>".$row['id']."</td> <td>".$row['phonenumber']."</td><td>"
              
               .$row['fname']. "</td><td>" .$row['lname'].
               "</td></tr></table>
@@ -61,7 +61,7 @@ body {
       /*position: static;
       top:-22px;*/
       margin-top: -10px;
-     /margin-bottom: 10px;/
+     /*margin-bottom: 10px;*/
       width: 100%;
       height: 200px;
   /*  vertical-align: center;*/
@@ -69,7 +69,7 @@ body {
     
 
 table {
-    /border: 1px solid black;/
+    /*border: 1px solid black;*/
      margin-left: 100px;
     margin-top: 30px;
      margin-left: auto;
