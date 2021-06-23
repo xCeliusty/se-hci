@@ -1,5 +1,7 @@
 <?php
-// include('DB.php');
+
+ include("DB.php");
+
 
 class add_new_patient {
     private $fname;
@@ -26,7 +28,17 @@ class add_new_patient {
         DB::query('INSERT INTO patients VALUES (NULL,:fname,:lname,:phonenumber,:dateofbirth,:adress,:gender,:reason,0,:healthcare)',
             array(':fname'=>$fname,':lname'=>$lname,':phonenumber'=>$phonenumber,':dateofbirth'=>$dateofbirth,':adress'=>$adress,':gender'=>$gender,':reason'=>$reason,':healthcare'=>$healthcare));
     }
+    public static function viewpatient() {
+        $allpatient = DB::query("SELECT * FROM patients");
+        return $allpatient;
+    }
+    public static function deletepatient($id) {
+        DB::query("DELETE FROM patients WHERE id=:id",array(':id'=>$id));
+    }
+
+
 }
  //   public static function 
 ?>
+
 
