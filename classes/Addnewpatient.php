@@ -1,4 +1,8 @@
 <?php
+
+ include("DB.php");
+
+
 class add_new_patient {
     private $fname;
     private $lname;
@@ -13,17 +17,26 @@ class add_new_patient {
     public static function createpatient($POSTS) {
         $fname = $POSTS['fname'];
         $lname = $POSTS['lname'];
-        $phonenumber = $POSTS['phonenumber'];
-        $dateofbirth = $POSTS['dateofbirth'];
-        $adress = $POSTS['adress'];
+        $phonenumber = $POSTS['PhoneNumber'];
+        $dateofbirth = $POSTS['Dateofbirth'];
+        $adress = $POSTS['Address'];
         $gender = $POSTS['gender'];
-        $reason = $POSTS['reason'];
+        $reason = $POSTS['Reasonofvisit'];
         $healthcare = $POSTS['healthcare'];
         
       
-        DB::query('INSERT INTO patient VALUES(NULL,:fname,:lname,:phonenumber,:dateofbirth,:adress,:gender,:reason,:pastdocname,:health)',
-            array(':fname'=>$fname,':lname'=>$lname,':phonenumber'=>$phonenumber,':dateofbirth'=>$dateofbirth,':adress'=>$adress,':gender'=>$gender,':reason'=>$reason,':pastdocname'=>$pastdocname,':healthcare'=>$healthcare,));
+        DB::query('INSERT INTO patients VALUES (NULL,:fname,:lname,:phonenumber,:dateofbirth,:adress,:gender,:reason,0,:healthcare)',
+            array(':fname'=>$fname,':lname'=>$lname,':phonenumber'=>$phonenumber,':dateofbirth'=>$dateofbirth,':adress'=>$adress,':gender'=>$gender,':reason'=>$reason,':healthcare'=>$healthcare));
     }
-}
+    public static function viewpatient() {
+        $allpatient = DB::query("SELECT * FROM patients");
+        return $allpatient;
+    }
+    public static function deletepatient($id) {
+        DB::query("DELETE FROM patients WHERE id=:id",array(':id'=>$id));
+    }
 
+
+}
+ //   public static function 
 ?>
