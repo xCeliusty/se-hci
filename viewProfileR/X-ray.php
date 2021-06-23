@@ -12,7 +12,7 @@
 $db_handle = new DB();
        $get_patient_id=$_GET['Pid'];
         //Where get_patient_id=$get_patient_id;
-        $result=mysqli_query($db_handle->conn,"SELECT * FROM `images` Where get_patient_id=$get_patient_id ORDER BY  image_name ");
+        $result=mysqli_query($db_handle->conn,"SELECT * FROM `images` Where get_patient_id=$get_patient_id ORDER BY  time_and_date");
        
     while($row=mysqli_fetch_assoc($result)){
 
@@ -23,7 +23,7 @@ $db_handle = new DB();
    <img class='myImage' src='".$row['image']."' width='500' height='600' /> " ;
     
     }
-//style='float:left;' <h3 class='heading' >".$row['image_name']. "</h3>
+
 ?>
 <style>
  
