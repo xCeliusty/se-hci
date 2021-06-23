@@ -4,7 +4,7 @@ include("classes/DB.php");
 include("classes/Login.php");
 session_start();
 $user_id = Login::isLoggedIn();
-$data = DB::query('SELECT fname, lname, email FROM users WHERE id=:id', array(':id'=>$user_id));
+$data = DB::query('SELECT * FROM users WHERE id=:id', array(':id'=>$user_id))[0];
 
 ?>
 <html>
@@ -108,14 +108,14 @@ color:black;
 
 
  <label for="First name">First name</label>
-  <input type="text" id="fname" name="name" placeholder="Your name.."style="position:relative; left:365px;">
+  <input type="text" id="fname" name="name" placeholder="Your name.."style="position:relative; left:365px;" value="<?php echo $data['fname'] ?>">
   <br>
   <label for="Last name">last name</label>
-  <input type="text" id="lname" name="name" placeholder="Last name.."style="position:relative; left:365px;">
+  <input type="text" id="lname" name="name" placeholder="Last name.."style="position:relative; left:365px;" value="<?php echo $data['lname'] ?>">
   <br>
 
   <label for="Email">Email</label>
-  <input type="text" id="email" name="Email" placeholder="Your Email.."style="position:relative; left:400px;">
+  <input type="text" id="email" name="Email" placeholder="Your Email.."style="position:relative; left:400px;" value="<?php echo $data['email'] ?>">
   <br>
 
   <label for="Password">Password</label>

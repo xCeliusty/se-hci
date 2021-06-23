@@ -131,7 +131,7 @@ form {
 						</select>
 					</div>
 					<div class="group-input flex" style="align-items: center;">
-							<input type="checkbox" class="checkInput"> <p style="width:100%">I accept the Term of use & Privacy Policy</p> 
+							<input type="checkbox" class="checkInput" required> <p style="width:100%">I accept the Term of use & Privacy Policy</p> 
 						</div>
 						
 						

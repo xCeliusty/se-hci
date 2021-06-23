@@ -23,7 +23,8 @@
 
     <div class="navitems">
        <a href="message.php"><p class="nbitems">Messages &nbsp;&nbsp; <img class="icons" src="qus.png"></p></a>
-      <a href="allpatients.php"><p class="nbitems"> Add/Remove patient&nbsp;&nbsp; <img class="icons" src="add.png"></p></a>
+       <a href="dentalclinichousegoals.php"><p class="nbitems"> Menu &nbsp;&nbsp; <img class="icons" src="add.png"></p></a>
+      <a href="allpatients.php"><p class="nbitems"> View/Remove patient&nbsp;&nbsp; <img class="icons" src="add.png"></p></a>
       <a href=".php"><p class="nbitems">Add Appointment &nbsp;&nbsp;<img class="icons" src="add.png"></p></a>
       <a href="table.php"><p class="nbitems">Search for patient&nbsp;&nbsp;<img class="icons" src="up.png"></p></a>
       <a href="EditProfile.php"><p class="nbitems">Settings&nbsp;&nbsp;<img class="icons" src="settings.png"></p></a>

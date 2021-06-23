@@ -40,3 +40,4 @@ class add_new_patient {
 }
  //   public static function 
 ?>
+

@@ -3,8 +3,7 @@
 // include("DB.php");
 
   include("classes/Addnewpatient.php");
-
-  $allpatient =add_new_patient::viewpatient();
+$allpatient =add_new_patient::viewpatient();
 
   if(isset($_GET['delete'])) {
     $user_id = $_GET['delete'];
