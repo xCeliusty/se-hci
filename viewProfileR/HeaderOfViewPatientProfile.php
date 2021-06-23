@@ -16,7 +16,7 @@
     <tr class="TR">
         <th class='TH'><a href="X-ray.php?Pid=<?php echo $_GET['Pid'];?> & Pname=<?php echo $_GET['Pname']; ?>">X-ray/Images</a></th>
         
-        <th class='TH'><a href="PatientMedicalHistory.php?Pid=<?php echo $_GET['Pid'];?> & Pname=<?php echo $_GET['Pname']; ?>">Medical History</th>
+        <th class='TH'><a href="PatientMedicalHistory.php?Pid=<?php echo trim($_GET['Pid']);?>&Pname=<?php echo trim($_GET['Pname']); ?>">Medical History</th>
         
       <th class='TH'><a href="DentistPrescription.php?Pid=<?php echo $_GET['Pid'];?> & Pname=<?php echo $_GET['Pname']; ?>">Prescription</th>
         

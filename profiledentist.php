@@ -1,4 +1,10 @@
-<?php session_start(); ?>
+<?php session_start(); 
+include("classes/DB.php");
+include("classes/Login.php");
+
+$user_id = Login::isLoggedIn();
+$data = DB::query('SELECT * FROM users WHERE id=:id', array(':id'=>$user_id))[0];
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,8 +31,8 @@
        <a href="message.php"><p class="nbitems">Messages &nbsp;&nbsp; <img class="icons" src="qus.png"></p></a>
        <a href="dentalclinichousegoals.php"><p class="nbitems"> Menu &nbsp;&nbsp; <img class="icons" src="add.png"></p></a>
       <a href="allpatients.php"><p class="nbitems"> View/Remove patient&nbsp;&nbsp; <img class="icons" src="add.png"></p></a>
-      <a href=".php"><p class="nbitems">Add Appointment &nbsp;&nbsp;<img class="icons" src="add.png"></p></a>
-      <a href="table.php"><p class="nbitems">Search for patient&nbsp;&nbsp;<img class="icons" src="up.png"></p></a>
+      <a href="add.php"><p class="nbitems">Add Appointment &nbsp;&nbsp;<img class="icons" src="add.png"></p></a>
+      <!-- <a href="table.php"><p class="nbitems">Search for patient&nbsp;&nbsp;<img class="icons" src="up.png"></p></a> -->
       <a href="EditProfile.php"><p class="nbitems">Settings&nbsp;&nbsp;<img class="icons" src="settings.png"></p></a>
             
     </div>
@@ -43,6 +49,8 @@
       <div class="textdiv">
         <h3 class="profname"></h3>
         <p class="profsub">Dentist</P>
+        <h4><?php echo $data['fname'].' '.$data['lname']; ?></h4>
+        <h3><?php echo $data['email']; ?></h3>
         <br><br>
       
     </div>

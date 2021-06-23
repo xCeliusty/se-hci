@@ -29,14 +29,17 @@
             <h3 style="padding-bottom: 10%;">Create Electronic Health Records</h3>
           
           </div></a>
+          <a href="add.php">
           <div class="column">
             <img src="layouts/imgs/calendar.svg" alt="calendar" width="150px ">
             <h3 style="padding-bottom: 10%;">Schedule Appointments </h3>
           </div>
+          </a>
+          
           <div class="column">
             <img src="layouts/imgs/reminders.svg" alt="Reminder" width="150px">
             <h3 style="padding-bottom: 10%;">Send Automated Reminders</h3>
-          </div>
+          </div></a>
           <br>
         </div>
         <div class="row" style="width: 100%;margin:0 auto;text-align:center; ">
@@ -44,10 +47,13 @@
             <img src="layouts/imgs/treatment-plans.svg" alt="treatment"  width="150px">
             <h3 style="padding-bottom: 40%;">Build Treatment Plans</h3>
           </div>
+          <a href="viewProfileR/SearchForPatient.php">
           <div class="column">
+          
             <img src="layouts/imgs/inventory.svg" alt="inventory"  width="150px">
             <h3 style="padding-bottom: 40%;">Manage Your Inventory</h3>
           </div>
+          </a>
           <div class="column">
             <img src="layouts/imgs/revenue.svg" alt="Revenue"  width="150px">
             <h3 style="padding-bottom: 40%;">Track Your Revenue</h3>

@@ -12,7 +12,6 @@
 $surgeries='';$allergy='';$pregnant='';$breast_feeding='';$diagnosis='';$time_and_date='';
 $db_handle = new DB();
        $get_patient_id=$_GET['Pid'];
-        //Where get_patient_id=$get_patient_id;
         $result=mysqli_query($db_handle->conn,"SELECT * FROM `medical_history` Where get_patient_id=$get_patient_id ");
        
     while($row=mysqli_fetch_assoc($result)){
@@ -48,24 +47,14 @@ $db_handle = new DB();
  return false;">Edit File</a>
 
  <!------------------------------------------ADD new Record----------------------------------------> 
- <a class="Aptag"href="#"
-   onclick="window.open(this.href,'targetWindow',
-                                   `toolbar=no,
-                                    location=no,
-                                    status=no,
-                                    menubar=no,
-                                    scrollbars=yes,
-                                    resizable=yes,
-                                    width=SomeSize,
-                                    height=SomeSize`);
- return false;">ADD Medical history</a>
+ <a class="Aptag"href="addpmd.php?Pid=<?php echo trim($_GET['Pid']);?>&Pname=<?php echo trim($_GET['Pname']); ?>">ADD Medical history</a>
  
 
  
  
 <style>
     .name,.nam{
-       /* text-align: center;*/
+      
         margin-left: 250px;
         padding:10px;
        
@@ -91,7 +80,5 @@ $db_handle = new DB();
         padding: 5px 5px;
         background:#BCBCC7 
     }
-    /*li{
-        list-style-type: none;
-    }*/
+   
     </style>

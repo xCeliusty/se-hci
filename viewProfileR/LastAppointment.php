@@ -19,7 +19,7 @@ $today= time();
     
 $db_handle = new DB();
        $get_patient_id=$_GET['Pid'];
-       $dentist_ID=20202020;
+       $dentist_ID=1;
         //Where get_patient_id=$get_patient_id;
         $result=mysqli_query($db_handle->conn,"SELECT * FROM `schedule` Where get_patient_id=$get_patient_id AND month<=$Month And year<=$Year ");
       

@@ -2,7 +2,6 @@
 
 include("classes/DB.php");
 include("classes/Login.php");
-session_start();
 $user_id = Login::isLoggedIn();
 $data = DB::query('SELECT * FROM users WHERE id=:id', array(':id'=>$user_id))[0];
 

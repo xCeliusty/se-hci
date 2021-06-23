@@ -20,12 +20,12 @@
        
     while( $row= mysqli_fetch_assoc($result2)){
 ?>
-  <a class='Atag' href='X-ray.php?Pid=<?php echo $row['id'];?> & Pname=<?php echo $row['Fname']; ?>'>
+  <a class='Atag' href='X-ray.php?Pid=<?php echo $row['id'];?> & Pname=<?php echo $row['fname']; ?>'>
   <!--input type='hidden' name='Pid' value='<php echo $row['patient_system_id'] ?>'/>
   <input type='hidden' name='Pname' value='<php echo $row['patient_first_name'] ?>'/-->
    <?php
      echo $output2= "
-   <table ><tr> <th>patient ID</th> <th>Patient First Name</th> <th>Patient Last Name</th></tr><tr> <td>".$row['id']."</td> <td>"
+   <table ><tr> <th>patient ID</th><th>Phone Number</th>  <th>Patient First Name</th> <th>Patient Last Name</th></tr><tr> <td>".$row['id']."</td> <td>".$row['phonenumber']."</td><td>"
              
               .$row['fname']. "</td><td>" .$row['lname'].
               "</td></tr></table>
