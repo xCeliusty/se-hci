@@ -30,7 +30,7 @@ class User {
 
         
     }
-
+ 
     public static function viewSpecficUser($id) {
         $user = DB::query("SELECT * FROM users WHERE id=:id",array(':id'=>$id))[0];
         return $user;
