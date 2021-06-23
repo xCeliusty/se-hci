@@ -104,7 +104,9 @@
 	</style>
 <?php include("includes/header.php");
 if (isset($_POST['create'])) 
+
 {
+	
 	//  $fname = $POST['fname'];
 	//  $lname = $POSTS['lname'];
 	//  $phonenumber = $POSTS['phonenumber'];
@@ -114,6 +116,7 @@ if (isset($_POST['create']))
 	//  $reason = $POSTS['reason'];
 	//  $healthcare = $POSTS['healthcare'];
 	add_new_patient::createpatient($_POST);
+	header('Location: pmd.php');
 
 }
 ?>
@@ -164,7 +167,7 @@ if (isset($_POST['create']))
                     
                     
 					<div class="group-btn">
-						<input type="submit" class="bButton" name="create" value="Done"> </div>
+						<input  type="submit" class="bButton" name="create" value="Done">
 						
 				</form>
 			</div>

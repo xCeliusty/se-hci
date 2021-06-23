@@ -1,0 +1,54 @@
+
+body {   
+    background-image: url('../images/seamless.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header{
+      text-align: center;
+      background: #ACD1FD;
+      border-radius: 20px / 10px;
+      /*position: static;
+      top:-22px;*/
+      margin-top: -10px;
+     /*margin-bottom: 10px;*/
+      width: 100%;
+      height: 200px;
+  /*  vertical-align: center;*/
+}
+    
+
+table {
+    /*border: 1px solid black;*/
+     margin-left: 100px;
+    margin-top: 30px;
+     margin-left: auto;
+  margin-right: auto;
+    width: 50%;
+    font-size: 24px;
+    font-family: 'times new roman',→ times, serif;
+    
+}
+.Atag{
+    text-decoration: none;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+  
+}
+th{
+ color:black ;
+    text-align: center;
+      border-bottom: 1px solid black;
+}
+td{
+    
+ /* background:#DBDBE5  ;*/
+     height: 100px;
+    text-align: center;
+}
+
+

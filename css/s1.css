@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    margin: 0;
+    background-image: url('seamless.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+    font-family: 'Roboto Slab', serif;
+
+}
+p{
+    color:black;}
+.c{
+	
+	text-align: center;
+	 width: 100%;
+    height: 100px;
+	margin-bottom:100px;
+	
+}
+
+.header {
+    background-color: #ACD1FD;
+    width: 100%;
+    height: 100px;
+    top:0;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+	
+    color: black;
+    margin-top: 20px;
+    font-size: 30px;
+    margin: 0 20px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    /* background-color: coral; */
+}
+b {
+    text-decoration: none;
+	
+    color: black;
+    margin-bottom: 30px;
+    font-size: 30px;
+    margin: 0 20px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    /* background-color: coral; */
+}
+
+
+.menu {
+    width: 100%;
+    height: 10px;
+	margin-left: 350px;
+    padding-top: 40px;
+}
+
+.m {
+    width: 100%;
+    height: 100px;
+	margin-right: 12px;
+    padding-top: 20px;
+	
+}
+.v{
+	  
+	margin-left: 100px;
+    margin-bottom:400px;
+}
+.n{
+	margin-left: 100px;
+   
+}
+
+
+.footer {
+    background-color:#ACD1FD;
+    width: 100%;
+    height: 150px;
+    text-align: left;
+    margin: 0 auto;
+    /* margin-bottom: 100px; */
+    /*justify-content: center;
+    align-items: center;
+    display: flex;*/ /*flex deh law hktb hagat fl ymen w hagat fl shemal*/
+}
+.About {
+	
+	 
+	margin-left: 30px;
+	
+}
+
+.footer .menu {
+    display: block;
+    padding-top: 0;
+}
+
+.all-courses {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+}
+
+.a{
+	margin-left: 30px;
+	
+}
+	.container .contactInfo .box .text h3
+		{
+			display:flex;
+			margin-left:1000px;
+			
+			font-size:16px;
+			font-weight: 700;
+			color: #fffff;
+			width: 80%;
+			
+		}
+		.contactForm
+		{
+			width: 30%;
+			padding: 10px;
+			background: #fff;
+			margin-left:80px;
+			margin-bottom:200px;
+		}
+		
+		.contactForm .inputBox
+		{
+			position:relative;
+			width:100%;
+			margin-top: 10px;
+		}
+		.contactForm .inputBox input,
+		.contactForm .inputBox textarea
+		{
+			width: 100%;
+			padding: 5px 0;
+			font-size:30px;
+			margin: 10px 0;
+			border:none;
+			border-bottom: 2px solid #333;
+			resize:none;
+			outline: none;
+		}
+		.contactForm .inputBox span
+		{
+			position:absolute;
+			left:0;
+			padding: 5px 0;
+			font-size:16px;
+			margin: 10px 0;
+			pointer-events:none;
+			transition: 0.5s;
+			color:#1E4E5F;
+		}
+		.contactForm .inputBox input:focus ~ span,
+		.contactForm .inputBox input:valid ~ span,
+		.contactForm .inputBox textarea:focus ~ span,
+		.contactForm .inputBox textarea:valid ~ span
+		{
+			color: #e91e63;
+			font-size:12px;
+			transform: translateY(-20px);
+		}
+		.contactForm .inputBox input[type="submit"]
+		{
+			width:200px;
+			margin-left:100;
+			background: #1E4E5F;
+			color:#fff;
+			border:none;
+			cursor: pointer;
+			padding:10px;
+			font-size:18px;
+		}
+
+
+

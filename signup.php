@@ -143,9 +143,18 @@ form {
 					<div class="group-input"><p>Confirm Password</p>
 						<input type="password" name="repassword" placeholder="Confirm your password"> 
 					</div>
+					<div class="group-input">
+					<select name="type" id="">
+							<option value="1">User</option>
+							<option value="2">Admin</option>
+						</select>
+					</div>
+					
 					<div class="group-input flex" style="align-items: center;">
 							<input type="checkbox" class="checkInput"> <p style="width:100%">I accept the Term of use & Privacy Policy</p> 
 						</div>
+
+						
 						
 					<div class="group-btn">
 						<input type="submit" class="bButton" name="create" value="signup"> </div>
