@@ -29,13 +29,13 @@ echo"<div  class='LastAppointmen'>
     }
 
 ?>
-    <input class="inputADD" type="submit" name="Add Appointment"/>
+    <input class="inputADD" type="submit" value="AddAppointment" name="AddAppointment"/>
     </html>
 <style>
     .inputADD{
     margin-top:10px;
-         margin-left:400px;
-    width:60px;  
+    /*     margin-left:400px;*/
+    width:120px;  
 height: 30px;  
  background:#BCBCC7; 
     } 
