@@ -1,5 +1,6 @@
 <?php
-include("includes/head.php");
+// include("classes/DB.php");
+include("classes/User.php");
 
 
 if (isset($_POST['create'])) 
@@ -145,15 +146,15 @@ form {
 					</div>
 					<div class="group-input">
 					<select name="type" id="">
-							<option value="1">User</option>
-							<option value="2">Admin</option>
+							<option value="1">Admin</option>
+							<option value="2">Dentist</option>
+							<option value="3">Patient</option>
+						
 						</select>
 					</div>
-					
 					<div class="group-input flex" style="align-items: center;">
 							<input type="checkbox" class="checkInput"> <p style="width:100%">I accept the Term of use & Privacy Policy</p> 
 						</div>
-
 						
 						
 					<div class="group-btn">

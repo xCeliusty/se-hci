@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #010405;
+  
     font-family: 'Montserrat', sans-serif;
 
     
@@ -74,7 +74,7 @@ form {
 }
 
 table td {
-    
+    width: 100%;
 }
 .header {
     background-color: #acd1fd;
@@ -165,7 +165,7 @@ a {
     display: table;
   }
   
-  #loginBody , #signupBody,#healthrecordbody,#dentalclinic,#admin,#form,#editprofile,#patient
+  #loginBody , #signupBody,#healthrecordbody,#dentalclinic,#admin,#form,#editprofile
   {
       background-image: url(../imgs/seamless.jpg);
       background-size: contain;

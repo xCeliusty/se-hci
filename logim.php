@@ -1,6 +1,6 @@
 <?php
-	include("includes/head.php");
-
+	include("classes/User.php");
+	session_start();
 	if (isset($_POST['create'])) 
 	{
 
@@ -15,14 +15,24 @@
 		
 				$cstrong = True;
 				$token = bin2hex(openssl_random_pseudo_bytes(64, $cstrong));
-				$user = DB::query('SELECT id FROM users WHERE email=:email', array(':email'=>$email));
+				$user = DB::query('SELECT * FROM users WHERE email=:email', array(':email'=>$email));
 				$user_id = $user[0]['id'];
+				// $_SESSION['type'] = $user[0]['user_type'];
+				$user_type = $user[0]['user_type'];
 				DB::query('INSERT INTO login_tokens VALUES (\'\', :token, :user_id, :date)', array(':token'=>sha1($token), ':user_id'=>$user_id,':date'=>$date));
 				echo '<script>alert("Logged In!")</script>';
 				setcookie("USR", $token, time() + 60 * 60 * 24 * 7, '/', NULL, NULL, TRUE);
 				setcookie("USR_", '1', time() + 60 * 60 * 24 * 3, '/', NULL, NULL, TRUE);
 
-				header('Location: dentalclinichousegoals.php');
+				if($user_type == 1) {
+					header('Location: profileadmin.php');
+				} else if($user_type ==2) {
+					header('Location: profiledentist.php');
+				}
+				else if($user_type ==3){
+					header('Location: profilepatient.php');
+
+				}
 				exit;
 			}
 			else
@@ -126,7 +136,7 @@
 			<h1>login</h1>
 				<form method="POST" action="logim.php">
 					<div class="group-input">
-						<input type="text" name="email" placeholder="Username.."> 
+						<input type="text" name="email" placeholder="Email.."> 
 					</div>
 					<div class="group-input">
 						<input type="password" name="password" placeholder="Password..">

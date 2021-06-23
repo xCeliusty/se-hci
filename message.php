@@ -49,8 +49,7 @@
         }
 		.header {
     background-color: #ACD1FD;
-    width: 100%;
-    height: 100px;
+  
     
     text-align: center;
     
@@ -82,16 +81,25 @@ a {
 
        
     </style>
-  </head>
-  <body>  
-  <div class="header">
- 
-  <div class="header-right">
+
+
+  <!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Link to the google font  -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+		<!-- Link to the CSS file  -->
+		<link rel="stylesheet" href="layouts/css/style.css">
+    </head>
+
+  <?php include("includes/header.php"); ?>
     
-    <a>messages</a>
+    <h1>Messages</h1>
    
-  </div>
-</div>
+  
     <div class = "div3">
   
     <table>
